@@ -1,12 +1,10 @@
 package com.golnegari.keystoreexample;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.security.KeyChain;
-import android.security.KeyChainAliasCallback;
 import android.view.View;
 import android.widget.Button;
 
@@ -31,6 +29,10 @@ public class MainActivity extends AppCompatActivity{
 
     public void onKeyChainClicked(){
         Intent intent = KeyChain.createInstallIntent();
+    }
+
+    public void onGotoTestClicked(View view){
+        startActivity(new Intent(this , WrapKeyApproach.class));
     }
 
 }

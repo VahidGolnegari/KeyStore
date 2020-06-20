@@ -28,5 +28,16 @@
         android:layout_height="wrap_content"
         android:text="keySotre"/>
 
+    <Button
+        android:id="@+id/button_mainactivity_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onGotoTestClicked"
+        android:text="Test"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/button_mainactivity_keystore"
+        app:layout_constraintRight_toRightOf="@id/button_mainactivity_keystore"
+        app:layout_constraintLeft_toLeftOf="@id/button_mainactivity_keystore"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
